@@ -1,0 +1,60 @@
+.app-container{
+    position: relative;
+}
+
+.btn-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#map-container{
+    height: 100vh;
+}
+
+.btn{
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    background-color: #50C878;
+    padding: 10px 30px;
+    width: 140px;
+    border: solid #50C878 1px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+}
+
+.btn:hover{
+    transition : 200ms;
+    padding: 10px 30px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #50C878;
+    border: solid 1px #50C878;
+}
+
+.red{
+    background-color: #DC143C;
+    border: solid #DC143C 1px;
+}
+
+.btn .red:hover{
+    color: #DC143C;
+    border: solid 1px #DC143C;
+}
+
+.btn:disabled{
+    background-color: #848080;
+    color: #fff;
+    border: solid 1px transparent;
+    cursor: not-allowed;
+}

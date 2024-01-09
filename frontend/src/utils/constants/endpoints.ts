@@ -1,0 +1,1 @@
+export const getOptimizedRoute = "http://localhost:3000/routing-data"
