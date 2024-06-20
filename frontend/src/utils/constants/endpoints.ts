@@ -1,1 +1,2 @@
-export const getOptimizedRoute = "http://localhost:3000/routing-data"
+const baseUrl = process.env.REACT_APP_BASE_URL;
+export const getOptimizedRoute = `${baseUrl}/routing-data`

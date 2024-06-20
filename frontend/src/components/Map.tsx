@@ -196,6 +196,12 @@ const MapboxMap: React.FC = () => {
                 <button className="btn red" disabled={!optimizedRoute} onClick={handleClearRouteState}>
                     Clear Route
                 </button>
+                {optimizedRoute && 
+                <div className="info-container">
+                    <p className="info-card red-text">Starting point: Red Marker</p>
+                    <p className="info-card">Ending point: Black Marker</p>
+                </div>
+                }
             </div>
             <div id="map-container" />;
         </div>
