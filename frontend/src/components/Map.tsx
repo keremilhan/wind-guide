@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import mapboxgl, { GeoJSONSourceRaw } from 'mapbox-gl';
-import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
 import axios from 'axios';
 import { Step, Waypoint, Wind } from '../types/common';
 import { getOptimizedRoute } from '../utils/constants/endpoints';
